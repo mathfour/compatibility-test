@@ -3,8 +3,6 @@
  */
 // bmc: at this point, june 3, 6:58am, this file isn't used, instead, this code is in the survey.html because it keeps glitching over here
 
-console.log('survey.js has been accessed');
-
 $('#submit').on('click', function (event) {
     console.log('script started in the survey.js file');
     event.preventDefault();

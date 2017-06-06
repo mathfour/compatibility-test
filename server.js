@@ -13,7 +13,6 @@ app.use(express.static(__dirname + '/app/public'));
 
 require('./app/routing/apiRoutes.js')(app);
 require('./app/routing/htmlRoutes.js')(app);
-var dataOfFriends = require('./app/data/friends.js');
 // require('./app/public/survey.js');
 // bmc: not using this ^^^^^ because we use the app.use above
 
