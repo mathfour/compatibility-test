@@ -1,11 +1,15 @@
 /**
  * Created by SilverDash on 6/2/17.
  */
-// bmc: at this point, june 3, 6:58am, this file isn't used, instead, this code is in the survey.html because it keeps glitching over here
 
+// var otherFile = require('./../routing/apiRoutes.js');
+// bmc: if that ^^^^^ would work, things would be better
+
+// bmc: this is for the submit click on the test
 $('#submit').on('click', function (event) {
-    console.log('script started in the survey.js file');
     event.preventDefault();
+
+    // bmc: create a new person with the stuff
     var newPerson = {
         name: $('#name').val().trim(),
         photo: $('#photo').val().trim(),
@@ -23,14 +27,12 @@ $('#submit').on('click', function (event) {
         ]
 
     };
-    console.log(newPerson);
     $.post('/friend-list', newPerson, function (responseFromBackEnd) {
+        // bmc: I'm not sure if this is working
 
         // bmc: display the information from the response
         // bmc: remember this is being "sent" to the apiRoutes.js
         // bmc: and we'll get the response back from that
-        console.log('we have found your friend');
-        console.log('this is the response from backend:', responseFromBackEnd);
         $('#name').val('');
         $('#photo').val('');
         $('#q1').val('');
@@ -44,6 +46,14 @@ $('#submit').on('click', function (event) {
         $('#q9').val('');
         $('#q10').val('');
     });
-
 });
 
+// otherFile.pleaseShowBestFriendAlready
+// bmc: yet another line of code that results in bupkus
+
+function showNewBestFriend(friend) {
+    $("#results").css("display", "block");
+    $("#results").html(friend);
+    $("#results").text("yes this is working");
+}
+// bmc: that ^^^^^^ stuff doesn't work at all. ARG!

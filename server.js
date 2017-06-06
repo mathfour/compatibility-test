@@ -19,3 +19,5 @@ require('./app/routing/htmlRoutes.js')(app);
 app.listen(PORT, function () {
     console.log('Open a browser and type http://localhost:%s in the url address box and press enter.', PORT);
 });
+
+// bmc: surprisingly this stuff works

@@ -3,19 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <!-- bmc: need meta stuff here -->
-    <meta property="og:url"
-          content="URL_OF_THE_SITE"/>
     <meta property="og:type"
           content="application"/>
     <meta property="og:title"
           content="Compatibility Test"/>
     <meta property="og:description"
           content="Homework submission by Bon Crowder to The Houston Coding Bootcamp Powered by UT Austin"/>
-    <!--<meta property="og:image"-->
-    <!--content="../assets/images/IMAGE_FILE_NAME.png"/>-->
-    <!--<link rel="icon"-->
-    <!--type="image/png"-->
-    <!--href="https://github.com/mathfour/GifTastic/blob/master/images/BonCrowderFaviconWhiteBackground.png?raw=true">-->
     <link rel=icon
           href="https://github.com/mathfour/GifTastic/blob/master/images/BonCrowderFaviconWhiteBackground.png?raw=true">
     <title>Compatibility Test</title>
@@ -24,18 +17,22 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
     
-    <!--<script type="text/javascript"-->
-    <!--src="survey.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!--<link rel="stylesheet"-->
+          <!--type="text/css"-->
+          <!--href="../public/modal.css">-->
 </head>
 <body>
-
+<!-- bmc: I repurposed this html from the example -->
 <div class="container">
-    <div id="results"></div>
+    <div id="results">
+        <div class="modalContent">
+            <span class="close">&times;</span>
+        </div>
+    </div>
     <form role="form">
         <h2>Survey Questions</h2>
         <hr>
